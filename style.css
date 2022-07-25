@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(150deg, #7F00FF, #E100FF);
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.player-container {
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 30px;
+}
+
+.player-container h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.player-container .score {
+    font-size: 45px;
+    font-weight: 500;
+    color: #7F00FF;
+}
+
+.player-container .current-score {
+    background-color: #7F00FF;
+    color: #fff;
+    margin-top: 70px;
+    padding: 4px 40px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.current-score p {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.current-score span {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.player-container.active {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.player-container.winner {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.player1 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.player2 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.new-game-btn {
+    font-size: 15px;
+    text-transform: uppercase;
+    position: absolute;
+    background-color: #fff;
+    color: #555;
+    padding: 3px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dices {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dices img {
+    width: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    filter: hue-rotate(220deg);
+}
+
+.roll-dice-btn {
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 4px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hold-btn {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 3px 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #f2f2f2;
+}
